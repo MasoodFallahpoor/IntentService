@@ -1,0 +1,1 @@
+A rudimentary Android app that demonstrates how to implement a [IntentService](https://developer.android.com/guide/components/services).
