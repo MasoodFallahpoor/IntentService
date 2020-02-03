@@ -4,13 +4,13 @@ import android.app.IntentService
 import android.content.Intent
 import android.util.Log
 
-class DownloadIntentService : IntentService("DOWNLOAD_WORKER_THREAD") {
+class DownloadService : IntentService("DOWNLOAD_WORKER_THREAD") {
 
     companion object {
         const val IMAGE_URL = "image_url"
     }
 
-    private val tag = DownloadIntentService::class.java.simpleName
+    private val tag = DownloadService::class.java.simpleName
     private val timeToSleepInMillis = 5000L
 
     override fun onHandleIntent(intent: Intent?) {

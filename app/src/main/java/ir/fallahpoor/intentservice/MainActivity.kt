@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        startDownloadIntentServiceButton.setOnClickListener {
-            intent = Intent(this, DownloadIntentService::class.java).apply {
-                putExtra(DownloadIntentService.IMAGE_URL, "http://www.example.com/example.jpg")
+        startDownloadServiceButton.setOnClickListener {
+            intent = Intent(this, DownloadService::class.java).apply {
+                putExtra(DownloadService.IMAGE_URL, "http://www.example.com/example.jpg")
             }
             startService(intent)
-            showToast("Service DownloadIntentService STARTED")
+            showToast("Service DownloadService STARTED")
         }
 
     }
